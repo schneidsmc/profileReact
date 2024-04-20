@@ -1,0 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+  font-family: "Montserrat", sans-serif;
+}
+
+nav{
+  z-index: 10001 !important;
+}
+.gradientBg{
+  background: linear-gradient(99deg, #AAD2BA 0%, #546D64 100%);
+}
+.btnPrimary {
+  @apply py-3 px-8 bg-feldgrau font-semibold text-white rounded hover:bg-primary transition-all duration-300
+}
