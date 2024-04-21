@@ -12,9 +12,9 @@ const Navbar = () => {
     }
     
     const navItems = [
-        {link: 'About', path: 'about'},
-        {link: 'Projects', path: 'projects'},
-        {link: 'Contact', path: 'contact'}
+        {link: 'About', path: '/About'},
+        {link: 'Projects', path: '/Projects'},
+        {link: 'Contact', path: '/Contact'}
 
     ]
     return (
