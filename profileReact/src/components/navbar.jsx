@@ -34,7 +34,7 @@ const Navbar = () => {
                 </div>
                 <div className='space-x-12 hidden md:flex items-center'>
                     {/* <a href="/">Resume</a> */}
-                    <button className='bg-secondary py-2 px-4 transition-all duration-300 rounded
+                    <button className='bg-tartiary py-2 px-4 transition-all duration-300 rounded
                     hover:text-white'>Resume</button>
                 </div>
 

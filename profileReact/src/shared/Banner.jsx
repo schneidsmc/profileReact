@@ -13,7 +13,7 @@ const Banner = ({banner, heading, subheading, btn1, btn2}) => {
                     {/* Banner Content */}
                     <div className='md:w-3/5'>
                         <h2 className='md:text-7xl text-4xl font-bold text-primary mb-6 leading-relaxed'>{heading}</h2>
-                        <p className='text-primary text-2xl mb-8'>
+                        <p className='text-tartiary text-2xl mb-8'>
                             {subheading}
                         </p>
                         <div className='space-x-5 space-y-4'>

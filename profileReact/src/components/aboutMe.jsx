@@ -19,7 +19,7 @@ const aboutMe = () => {
                             </h5>
                         </div>
                         <div className='flex flex-col items-center justify-center bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl p-8 
-                        hover:-translate-y-4 transition-all duration-300 cursor-pointer' >
+                        hover:-translate-y-4 transition-all duration-300 cursor-pointer md:mt-16' >
                             <img src='/hotdog-solid.svg' alt="hotdog"  className='w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-24'/>
                             <h5 className='text-2xl font-semibold text-primary px-5 text-center mt-5'>
                                 Weather Dashboard
