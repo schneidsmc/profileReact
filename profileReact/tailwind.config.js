@@ -12,6 +12,9 @@ export default {
         'tartiary': '#FF5666',
         'feldgrau': '#546D64',
         'celadon': '#AAD2BA'
+      },
+      boxShadow: {
+        '3xl': '0 10px 50px 0px rgba(0, 0, 0, 0.15)'
       }
     },
   },
