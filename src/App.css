@@ -18,5 +18,5 @@ nav{
   @apply py-1 px-4 mx-2 bg-feldgrau font-semibold text-white rounded hover:bg-primary transition-all duration-300
 }
 .footBtns{
-  @apply py-1 px-4 mx-2 font-semibold text-primary rounded hover:bg-feldgrau transition-all duration-300
+  @apply py-1 px-4 mx-2 font-semibold bg-feldgrau rounded hover:bg-tartiary transition-all duration-300
 }
