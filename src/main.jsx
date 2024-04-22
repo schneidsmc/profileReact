@@ -6,9 +6,6 @@ import './App.css'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-// import Banner from './shared/Banner.jsx'
-// import Footer from './shared/Footer.jsx'
-// import Projects from './shared/Projects.jsx'
 
 import App from './App'
 import About from './pages/About'

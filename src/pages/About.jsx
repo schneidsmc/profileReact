@@ -11,9 +11,9 @@ const About = () => {
                 <div className='md:w-1/2'>
                     <h2 className='md:tex-5xl text-3xl font-bold text-primary mb-5 leading-normal'> This is
                     <span className='text-tartiary'> About Me</span></h2>
-                    <p className='text-tartiary text-lg ma-7'>Welcome to my portfolio! I am a recent Bootcamp graduate from the UW Extension Program. I have a unique blen of passion and determination that has proven to be helpful throughout the bootcamp.
+                    <p className='text-tartiary text-lg ma-7'>Welcome to my portfolio! I am a recent Bootcamp graduate from the UW Extension Program. I have a unique blen of passion and determination that has proven to be helpful throughout my career.
                     I have an extremely purpose-driven mindset that allows me to think outside of the box for any challenges that arise. I am a life-long learner and I genuinely enjoy gaining knowledge from anyone or any situation. 
-                    In this bootcmap we have covered Javascript, APIs, Node.js, OOP, Express.js, SQL, ORM, MVC, PWAs, REact and the MERN Stack. Check out my projects page to see what some creations!</p>
+                    I have learned Javascript, APIs, Node.js, OOP, Express.js, SQL, ORM, MVC, PWAs, React and the MERN Stack. Check out my projects page to see what some creations!</p>
                     {/* <button className='btnPrimary'>ya roll bby</button> */}
 
                 </div>

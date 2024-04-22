@@ -23,7 +23,7 @@ const Navbar = () => {
             <div className='text-lg container mx-auto flex justify-between items-center font-medium'>
                 <div className='flex space-x-14 items-center'>
                     <a href="/" className='text-2xl font-semibold flex items center space x-3 text-primary'>
-                        <img src={ello} alt="hellow" className ="w-10 inline block items-center"/></a>
+                        <img src={ello} alt="hellow" className ="w-10 inline block items-center rounded-[35px] hover:bg-tartiary"/></a>
                     {/* NavItems using map */}
                     <ul className='md:flex space-x-12 hidden'>
                         {
@@ -57,9 +57,6 @@ const Navbar = () => {
 
 
         </div>
-
-
-
 
 
         </>
