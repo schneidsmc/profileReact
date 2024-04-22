@@ -19,7 +19,7 @@ const Projects = () => {
                             <h5 className='text-2xl font-semibold text-primary px-5 text-center mt-5'>
                                 Journey Jot
                                 <hr className="py-10"/>
-                                <a href="https://github.com/Umbelth94/JourneyJot"><img src="/github.svg" alt="gitIcon" className="w-10 inline block items-center rounded-[35px] hover:bg-tartiary" /></a>
+                                <a href="https://github.com/Umbelth94/JourneyJot"target="_blank" rel="noopener noreferrer" ><img src="/github.svg" alt="gitIcon" className="w-10 inline block items-center rounded-[35px] hover:bg-tartiary" /></a>
                             </h5>
                             
                             
@@ -34,7 +34,7 @@ const Projects = () => {
                             <h5 className='text-2xl font-semibold text-primary px-5 text-center mt-5'>
                                 Code Quiz
                                 <hr className="py-10"/>
-                                <a href="https://github.com/schneidsmc/code-quiz4"><img src="/github.svg" alt="gitIcon" className="w-10 inline block items-center rounded-[35px] hover:bg-tartiary" /></a>
+                                <a href="https://github.com/schneidsmc/code-quiz4"target="_blank" rel="noopener noreferrer" ><img src="/github.svg" alt="gitIcon" className="w-10 inline block items-center rounded-[35px] hover:bg-tartiary" /></a>
                             </h5>
                             </a>
                         </div>
@@ -46,7 +46,7 @@ const Projects = () => {
                             <h5 className='text-2xl font-semibold text-primary px-5 text-center mt-5'>
                                 Weather Dashboard
                                 <hr className="py-10"/>
-                                <a href="https://github.com/schneidsmc/weather-dashboard06"><img src="/github.svg" alt="gitIcon" className="w-10 inline block items-center rounded-[35px] hover:bg-tartiary" /></a>
+                                <a href="https://github.com/schneidsmc/weather-dashboard06"target="_blank" rel="noopener noreferrer" ><img src="/github.svg" alt="gitIcon" className="w-10 inline block items-center rounded-[35px] hover:bg-tartiary" /></a>
                             </h5>
                             </a>
                         </div>
