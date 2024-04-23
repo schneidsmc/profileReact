@@ -19,10 +19,10 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className='bg-white md:px-4 py-2 border-b fixed top-0 right-0 left-0 z-50'>
-                <div className='container mx-auto flex justify-between items-center'>
+            <nav className='bg-white md:px-414 p-4 max-w-screen-2xl border-b mx-auto text-primary fixed top-0 right-0 left-0'>
+                <div className='text-lg container mx-auto flex justify-between items-center font-medium'>
                     <Link to="/" className='text-2xl font-semibold flex items-center space-x-3 text-primary'>
-                        <img src={ello} alt="hello" className="w-10 rounded-full hover:bg-gray-200" />
+                        <img src={ello} alt="hello" className="w-10 inline block items-center rounded-[35px] hover:bg-tartiary" />
                     </Link>
                     <ul className='md:flex space-x-12 hidden'>
                         {navItems.map(({ link, path }) => (
@@ -48,7 +48,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-            <div className={`md:hidden fixed top-0 right-0 left-0 bg-gray-100 z-40 transform transition-transform ease-in-out ${
+            <div className={`md:hidden fixed top-16 right-0 left-0 bg-gray-100 z-50 transform transition-transform ease-in-out ${
                 isMenuOpen ? 'translate-y-0' : '-translate-y-full'
             }`}>
                 <div className='p-4 space-y-4'>

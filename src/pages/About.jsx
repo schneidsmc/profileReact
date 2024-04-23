@@ -2,7 +2,7 @@
 
 const About = () => {
     return (
-        <div className='md:py-40 px-14 p-4 max-w-s mx-auto space-y-10 flex flex-col justify-center items-center'>
+        <div className='my-24 md:py-40 px-14 p-4 max-w-s mx-auto space-y-10 flex flex-col justify-center items-center'>
             <div className='flex flex-col md:flex-row justify-between items-center gap-8'>
                 <div className='md:w-1/2'>
                     <img src='/torple.jpg' alt="carrot" className='w-full h-auto rounded-xl rounded-br-[80px] md:w-96 md:h-auto'/>
@@ -13,7 +13,7 @@ const About = () => {
                     <span className='text-tartiary'> About Me</span></h2>
                     <p className='text-tartiary text-lg ma-7'>Welcome to my portfolio! I am a recent Bootcamp graduate from the UW Extension Program. I have a unique blen of passion and determination that has proven to be helpful throughout my career.
                     I have an extremely purpose-driven mindset that allows me to think outside of the box for any challenges that arise. I am a life-long learner and I genuinely enjoy gaining knowledge from anyone or any situation. 
-                    I have learned Javascript, APIs, Node.js, OOP, Express.js, SQL, ORM, MVC, PWAs, React and the MERN Stack. Check out my projects page to see what some creations!</p>
+                    I have learned Javascript, APIs, Node.js, OOP, Express.js, SQL, ORM, MVC, PWAs, React and the MERN Stack. Check out my <a href="/projects" className="text-tartiary underline">Projects</a> page to see what some creations!</p>
                     {/* <button className='btnPrimary'>ya roll bby</button> */}
 
                 </div>
