@@ -1,64 +1,74 @@
-import { useState } from 'react'
-import ello from '../assets/ello.svg'
-// import { IconName } from 'react-icons/gr'
-import { FaXmark, FaBars } from "react-icons/fa6";
-
+import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import ello from '../assets/ello.svg';
+import { FaTimes, FaBars } from 'react-icons/fa';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const currentPage = useLocation().pathname;
 
     const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen)
-    }
-    
-    const navItems = [
-        {link: 'About', path: '/About'},
-        {link: 'Projects', path: '/Projects'},
-        {link: 'Contact', path: '/Contact'}
+        setIsMenuOpen(!isMenuOpen);
+    };
 
-    ]
+    const navItems = [
+        { link: 'About', path: '/About' },
+        { link: 'Projects', path: '/Projects' },
+        { link: 'Contact', path: '/Contact' }
+    ];
+
     return (
         <>
-        <nav className='bg-white md:px-414 p-4 max-w-screen-2xl border-b mx-auto text-primary fixed top-0 right-0 left-0'>
-            <div className='text-lg container mx-auto flex justify-between items-center font-medium'>
-                <div className='flex space-x-14 items-center'>
-                    <a href="/" className='text-2xl font-semibold flex items center space x-3 text-primary'>
-                        <img src={ello} alt="hellow" className ="w-10 inline block items-center rounded-[35px] hover:bg-tartiary"/></a>
-                    {/* NavItems using map */}
+            <nav className='bg-white md:px-4 py-2 border-b fixed top-0 right-0 left-0 z-50'>
+                <div className='container mx-auto flex justify-between items-center'>
+                    <Link to="/" className='text-2xl font-semibold flex items-center space-x-3 text-primary'>
+                        <img src={ello} alt="hello" className="w-10 rounded-full hover:bg-gray-200" />
+                    </Link>
                     <ul className='md:flex space-x-12 hidden'>
-                        {
-                            navItems.map(({link, path}) => <a key={link} href={path} className='block 
-                            hover:text-gray-300'>{link}</a>)
-                        }
+                        {navItems.map(({ link, path }) => (
+                            <li key={link}>
+                                <Link
+                                    to={path}
+                                    className={`text-primary hover:text-gray-700 ${
+                                        currentPage === path ? 'font-bold' : ''
+                                    }`}
+                                >
+                                    {link}
+                                </Link>
+                            </li>
+                        ))}
                     </ul>
+                    <div className='md:flex items-center space-x-12 hidden'>
+                        <button className='bg-tartiary py-2 px-4 rounded hover:text-white'>Resume</button>
+                    </div>
+                    <div className='md:hidden'>
+                        <button onClick={toggleMenu} className='text-gray-700 focus:outline-none'>
+                            {isMenuOpen ? <FaTimes className='w-6 h-6' /> : <FaBars className='w-6 h-6' />}
+                        </button>
+                    </div>
                 </div>
-                <div className='space-x-12 hidden md:flex items-center'>
-                    {/* <a href="/">Resume</a> */}
-                    <button className='bg-tartiary py-2 px-4 transition-all duration-300 rounded
-                    hover:text-white'>Resume</button>
-                </div>
-
-                {/* menu btn */}
-                <div className='md:hidden'>
-                    <button onClick={toggleMenu} className='text-white focus:outline-none focus:text-gray-300'>
-                        {
-                            isMenuOpen ? ( <FaXmark className='w-6 h-6 text-primary'/>) : (<FaBars className='w-6 h-6 text-primary'/>)
-                        }
+            </nav>
+            <div className={`md:hidden fixed top-0 right-0 left-0 bg-gray-100 z-40 transform transition-transform ease-in-out ${
+                isMenuOpen ? 'translate-y-0' : '-translate-y-full'
+            }`}>
+                <div className='p-4 space-y-4'>
+                    {navItems.map(({ link, path }) => (
+                        <Link
+                            key={link}
+                            to={path}
+                            className={`block text-primary font-medium hover:text-gray-700 ${
+                                currentPage === path ? 'font-bold' : ''
+                            }`}
+                            onClick={toggleMenu}
+                        >
+                            {link}
+                        </Link>
+                    ))}
+                    <button className='bg-tartiary py-2 px-4 rounded text-white w-full' onClick={toggleMenu}>
+                        Close Menu
                     </button>
-
                 </div>
             </div>
-        </nav>
-        <div className={`space-y-4 px-4 pt-24 pb-5 bg-feldgrau ${isMenuOpen ? 'block fixed top-0 right-0 left-0' : 'hidden'}`}>
-            {
-                navItems.map(({link, path}) => <a key={link} href={path} className='block 
-                hover:text-gray-300'>{link}</a>)
-            }
-
-
-        </div>
-
-
         </>
     );
 };
