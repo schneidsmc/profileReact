@@ -1,5 +1,3 @@
-
-
 const Projects = () => {
     return (
         <div className='my-24 md:px-14 py-40 px-4 max-w-screen-2xl mx-auto'>
@@ -21,10 +19,7 @@ const Projects = () => {
                                 <hr className="py-10"/>
                                 <a href="https://github.com/Umbelth94/JourneyJot"target="_blank" rel="noopener noreferrer" ><img src="/github.svg" alt="gitIcon" className="w-10 inline block items-center rounded-[35px] hover:bg-tartiary" /></a>
                             </h5>
-                            
-                            
                             </a>
-                            
                         </div>
                         <div>
                              <a href="https://schneidsmc.github.io/code-quiz4/"target="_blank" rel="noopener noreferrer" 

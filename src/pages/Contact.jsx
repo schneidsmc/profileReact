@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import { validateEmail } from '../utils/helpers.js';
-// import { Modal } from 'src/shared/Modal.jsx';
+// import { Modal } from '../shared/Modal.jsx';
 
 function Contact() {
     // const [showModal, setShowModal] = useState(false)
@@ -40,8 +40,6 @@ function Contact() {
                     <div className='w-full md:w-3/5'>
                         <h2 className='text-4xl md:text-5xl font-bold text-primary mb-6 text-center'>Contact Me</h2>
                         <p className='text-center'>Thank you for your interest!
-                            {/* <hr /> */}
-                             
                         </p>
                     <div>
                         <form className='form flex flex-col items-center ' onSubmit={handleFormSubmit}>

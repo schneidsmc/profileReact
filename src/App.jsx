@@ -8,7 +8,6 @@ function App() {
   return (
     <>
       {/* create components */}
-
       <Navbar/>
       <main className='mx-3'>
         <Outlet />
@@ -19,22 +18,3 @@ function App() {
 }
 
 export default App
-// function App() {
- 
-
-//   return (
-//     <>
-//       {/* create components */}
-
-//       <Navbar/>
-//       <Home/>
-//       <About />
-//       <Projects />
-//       <Footer />
-
-
-//     </>
-//   )
-// }
-
-// export default App

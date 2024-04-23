@@ -9,8 +9,6 @@ export default function Home() {
             subheading='Full Stack Web Developer'
             btn1='Resume'
             btn2='GitHub'/>
-
-
         </div>
     );
 }

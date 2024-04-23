@@ -1,5 +1,3 @@
-
-
 const About = () => {
     return (
         <div className='my-24 md:py-40 px-14 p-4 max-w-s mx-auto space-y-10 flex flex-col justify-center items-center'>
@@ -14,11 +12,8 @@ const About = () => {
                     <p className='text-tartiary text-lg ma-7'>Welcome to my portfolio! I am a recent Bootcamp graduate from the UW Extension Program. I have a unique blen of passion and determination that has proven to be helpful throughout my career.
                     I have an extremely purpose-driven mindset that allows me to think outside of the box for any challenges that arise. I am a life-long learner and I genuinely enjoy gaining knowledge from anyone or any situation. 
                     I have learned Javascript, APIs, Node.js, OOP, Express.js, SQL, ORM, MVC, PWAs, React and the MERN Stack. Check out my <a href="/projects" className="text-tartiary underline">Projects</a> page to see what some creations!</p>
-                    {/* <button className='btnPrimary'>ya roll bby</button> */}
-
                 </div>
             </div>
-            {/* <div className='h-8'></div> */}
             <div className='flex flex-col md:flex-row-reverse justify-between items-center gap-8'>
                 <div className='md:w-1/2'>
                     <img src='/lake.jpg' alt="mountain" className='w-full h-auto rounded-xl rounded-bl-[80px] rounded-tl-[80px] md:w-96 md:h-auto'/>
@@ -29,8 +24,6 @@ const About = () => {
                     <hr /><span className='text-tartiary'> About Me</span></h2>
                     <p className='text-tartiary text-lg ma-7'>I graduated from University of Wisconsin-Eau Claire in 2014 with a major in Kinesiology and a minor in Gerontology. This led me to work in the non-profit world at the Door County YMCA for seven years. 
                     I started as a part-time Active Older Adult employee and worked my way to Healthy Living Director and then finally the Executive Director of the Northern Door YMCA Facility.  </p>
-                    {/* <button className='btnPrimary'>ya roll bby</button> */}
-
                 </div>
             </div>
             <div className='flex flex-col md:flex-row justify-between items-center gap-8'>
@@ -43,12 +36,8 @@ const About = () => {
                     <hr /><span className='text-tartiary'> About Me</span></h2>
                     <p className='text-tartiary text-lg ma-7'>I enjoy the outdoors. In my freetime, I enjoy camping, hiking and exploring! Bike-packing is one of my all-time favorite hobbies. 
                     It could be a ride 20-miles away or across the state, I am happiest when I am on my bike. I have an amazing family and three incredible nephews that always keep me on my toes! </p>
-                    {/* <button className='btnPrimary'>ya roll bby</button> */}
-
                 </div>
             </div>
-
-
         </div>
     );
 };

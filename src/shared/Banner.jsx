@@ -1,5 +1,3 @@
-
-
 const Banner = ({banner, heading, subheading, btn1, btn2}) => {
     return (
   
@@ -19,15 +17,10 @@ const Banner = ({banner, heading, subheading, btn1, btn2}) => {
                         <div className='space-x-5 space-y-4'>
                             <a href="" className='btnPrimary'>{btn1}</a>
                             <a href="https://github.com/schneidsmc" target="_blank" rel="noopener noreferrer" className='btnPrimary'>{btn2}</a>
-                            {/* <button className='btnPrimary'>{btn1}</button>
-                            <button className='btnPrimary'>{btn2}</button> */}
                         </div>
-
-                    </div>
-                    
+                    </div>       
                 </div>
             </div>
-
     );
 };
 

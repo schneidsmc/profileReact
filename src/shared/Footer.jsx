@@ -1,9 +1,6 @@
-
-
 const Footer = () => {
     return (
         <footer className='bg-celadon md:px-10 p-2 max-w-screen-2xl mx-auto mt-auto'>
-        
             <div className='flex justify-center items-center'>
                 <div>
                     <ul className='flex'>
@@ -19,7 +16,6 @@ const Footer = () => {
                     </ul>
                     <hr />
                 </div>
-                    
             </div>
             <div>
             <p className='flex justify-center items-center font-semibold items-center'>schneidsmc@gmail.com | 920.948.1157</p>
