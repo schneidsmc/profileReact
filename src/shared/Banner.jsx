@@ -15,7 +15,7 @@ const Banner = ({banner, heading, subheading, btn1, btn2}) => {
                             {subheading}
                         </p>
                         <div className='space-x-5 space-y-4'>
-                            <a href="" className='btnPrimary'>{btn1}</a>
+                            <a href="public/MEGAN SCHNEIDER _ Resume.pdf" target="_blank" rel="noopener noreferrer" className='btnPrimary'>{btn1}</a>
                             <a href="https://github.com/schneidsmc" target="_blank" rel="noopener noreferrer" className='btnPrimary'>{btn2}</a>
                         </div>
                     </div>       

@@ -9,7 +9,7 @@ const About = () => {
                 <div className='md:w-1/2'>
                     <h2 className='md:tex-5xl text-3xl font-bold text-primary mb-5 leading-normal'> This is
                     <span className='text-tartiary'> About Me</span></h2>
-                    <p className='text-tartiary text-lg ma-7'>Welcome to my portfolio! I am a recent Bootcamp graduate from the UW Extension Program. I have a unique blen of passion and determination that has proven to be helpful throughout my career.
+                    <p className='text-tartiary text-lg ma-7'>Welcome to my portfolio! I am a recent Bootcamp graduate from the UW Extension Program. I have a unique blend of passion and determination that has proven to be helpful throughout my career.
                     I have an extremely purpose-driven mindset that allows me to think outside of the box for any challenges that arise. I am a life-long learner and I genuinely enjoy gaining knowledge from anyone or any situation. 
                     I have learned Javascript, APIs, Node.js, OOP, Express.js, SQL, ORM, MVC, PWAs, React and the MERN Stack. Check out my <a href="/projects" className="text-tartiary underline">Projects</a> page to see what some creations!</p>
                 </div>
@@ -22,7 +22,7 @@ const About = () => {
                 <div className='md:w-1/2'>
                     <h2 className='md:tex-5xl text-3xl font-bold text-primary mb-5 leading-normal'>This is a little bit MORE 
                     <hr /><span className='text-tartiary'> About Me</span></h2>
-                    <p className='text-tartiary text-lg ma-7'>I graduated from University of Wisconsin-Eau Claire in 2014 with a major in Kinesiology and a minor in Gerontology. This led me to work in the non-profit world at the Door County YMCA for seven years. 
+                    <p className='text-tartiary text-lg ma-7'>I graduated from University of Wisconsin-Eau Claire in 2014 with a major in Kinesiology and a minor in Gerontology. This led me to work in the non-profit world at the Door County YMCA for eight years. 
                     I started as a part-time Active Older Adult employee and worked my way to Healthy Living Director and then finally the Executive Director of the Northern Door YMCA Facility.  </p>
                 </div>
             </div>

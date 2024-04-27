@@ -5,13 +5,13 @@ const Footer = () => {
                 <div>
                     <ul className='flex'>
                         <li className='footBtns'>
-                            <a href="https://www.linkedin.com/in/megan-schneider-215561245" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                            <a href="https://www.linkedin.com/in/meganschneider215/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                         </li>
                         <li className='footBtns'>
                             <a href="https://github.com/schneidsmc" target="_blank" rel="noopener noreferrer">Github</a>
                         </li>
                         <li className='footBtns'>
-                            <a href="/">Resume</a>
+                            <a href="public/MEGAN SCHNEIDER _ Resume.pdf"target="_blank" rel="noopener noreferrer">Resume</a>
                         </li>
                     </ul>
                     <hr />
