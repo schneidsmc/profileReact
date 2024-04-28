@@ -1,37 +1,45 @@
 import { useState } from 'react';
+import axios from 'axios'
 
 import { validateEmail } from '../utils/helpers.js';
+
+
 // import { Modal } from '../shared/Modal.jsx';
 
 function Contact() {
     // const [showModal, setShowModal] = useState(false)
+    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
-    const [name, setName] = useState('');
+
 
     const handleInputChange = (e) => {
-        const { target } = e;
-        const inputType = target.name;
-        const inputValue = target.value;
-
-        if (inputType === 'email') {
-            setEmail(inputValue);
-        } else if (inputType === 'name') {
-            setName(inputValue)
+        const { name, value } = e.target;
+        if (name === 'name') {
+            setName(value);
+        } else if (name === 'email') {
+            setEmail(value);
         }
-    }
-    const handleFormSubmit = (e) => {
+    };
+    
+    const handleFormSubmit = async (e) => {
         e.preventDefault();
         if(!validateEmail(email)) {
-            setErrorMessage(
-                'Email is invalid'
-            );
+            setErrorMessage('Email is invalid');
             return;
         }
-        alert(`Thanks for Reaching Out ${name}! I will be in touch as soon as I can!`)
 
-        setName('');
-        setEmail('');
+        try {
+            // Proceed with form submission
+            await axios.post('http://localhost:3001/send-email', { name, email });
+            alert(`Thanks for Reaching Out ${name}! I will be in touch as soon as I can!`);
+            setName('');
+            setEmail('');
+            setErrorMessage('');
+        } catch (error) {
+            console.error('Axios Erros', error);
+            setErrorMessage('Error sending email');
+        }
     };
     return (
         <div className='m-24 md:m-24 lg:m-26 xl:m-20 2xl:m-40 gradientBg rounded-xl rounded-br-[80px] rounded-tl-[80px] flex flex-col md:p-9 px-4 py-8 md:py-16'>
@@ -42,7 +50,7 @@ function Contact() {
                         <p className='text-center'>Thank you for your interest!
                         </p>
                     <div>
-                        <form className='form flex flex-col items-center ' onSubmit={handleFormSubmit}>
+                        <form className='form flex flex-col items-center' onSubmit={handleFormSubmit}>
                             <input className='inputField mb-4 w-full md:w-72 rounded-xl p-2'
                             value={name}
                             name='name'
