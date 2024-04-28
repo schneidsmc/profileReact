@@ -33,7 +33,7 @@ function Contact() {
         try {
             // Proceed with form submission
             await axios.post('http://localhost:3001/send-email', { name, email });
-            alert(`Thanks for Reaching Out ${name}! An email has been sent to me with your information. I will be in touch as soon as I can!`);
+            alert(`Thanks for Reaching Out ${name}! I will be in touch as soon as I can!`);
             setName('');
             setEmail('');
             setErrorMessage('');
