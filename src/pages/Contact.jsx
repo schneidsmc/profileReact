@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios'
 
+
 import { validateEmail } from '../utils/helpers.js';
 
 
@@ -30,8 +31,10 @@ function Contact() {
         }
 
         try {
-            // Proceed with form submission
-            await axios.post('http://localhost:3001/send-email', { name, email });
+
+            const API_BASE_URL = import.meta.env.REACT_APP_API_BASE_URL || 'http://localhost:3001';
+            await axios.post(`${API_BASE_URL}/send-email`, { name, email });
+
             alert(`Thanks for Reaching Out ${name}! An email has been sent to me with your information. I will be in touch as soon as I can!`);
             setName('');
             setEmail('');
