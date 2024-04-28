@@ -39,12 +39,8 @@ const Navbar = () => {
                         ))}
                     </ul>
                     <div className='md:flex items-center space-x-12 hidden'>
-                        <a href="public/MEGAN SCHNEIDER _ Resume.pdf" target="_blank" rel="noopener noreferrer" className='bg-tartiary py-2 px-4 rounded hover:text-white'>Resume</a>
+                        <a href="/MEGAN SCHNEIDER _ Resume.pdf" target="_blank" rel="noopener noreferrer" className='bg-tartiary py-2 px-4 rounded hover:text-white'>Resume</a>
                     </div>
-
-                    {/* <div className='md:flex items-center space-x-12 hidden'>
-                        <button className='bg-tartiary py-2 px-4 rounded hover:text-white'>Resume</button>
-                    </div> */}
                     <div className='md:hidden'>
                         <button onClick={toggleMenu} className='text-gray-700 focus:outline-none'>
                             {isMenuOpen ? <FaTimes className='w-6 h-6' /> : <FaBars className='w-6 h-6' />}

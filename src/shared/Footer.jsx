@@ -11,7 +11,7 @@ const Footer = () => {
                             <a href="https://github.com/schneidsmc" target="_blank" rel="noopener noreferrer">Github</a>
                         </li>
                         <li className='footBtns'>
-                            <a href="public/MEGAN SCHNEIDER _ Resume.pdf"target="_blank" rel="noopener noreferrer">Resume</a>
+                            <a href="/MEGAN SCHNEIDER _ Resume.pdf"target="_blank" rel="noopener noreferrer">Resume</a>
                         </li>
                     </ul>
                     <hr />
