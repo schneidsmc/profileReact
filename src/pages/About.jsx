@@ -11,7 +11,7 @@ const About = () => {
                     <span className='text-tartiary'> About Me</span></h2>
                     <p className='text-tartiary text-lg ma-7'>Welcome to my portfolio! I am a recent Bootcamp graduate from the UW Extension Program. I have a unique blend of passion and determination that has proven to be helpful throughout my career.
                     I have an extremely purpose-driven mindset that allows me to think outside of the box for any challenges that arise. I am a life-long learner and I genuinely enjoy gaining knowledge from anyone or any situation. 
-                    I have learned Javascript, APIs, Node.js, OOP, Express.js, SQL, ORM, MVC, PWAs, React and the MERN Stack. Check out my <a href="/projects" className="text-tartiary underline">Projects</a> page to see what some creations!</p>
+                    I have learned Javascript, APIs, Node.js, OOP, Express.js, SQL, ORM, MVC, PWAs, React and the MERN Stack. Check out my <a href="/Projects" className="text-tartiary underline">Projects</a> page to see what some creations!</p>
                 </div>
             </div>
             <div className='flex flex-col md:flex-row-reverse justify-between items-center gap-8'>
