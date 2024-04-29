@@ -4,7 +4,15 @@ function ContactForm() {
   const [state, handleSubmit] = useForm("xwkgypkn");
 
   if (state.succeeded) {
-    return <p className="m-24 md:m-24 lg:m-26 xl:m-20 2xl:m-40 gradientBg rounded-xl rounded-br-[80px] rounded-tl-[80px] flex flex-col md:p-9 px-4 py-8 md:py-16 text-xl text-center">Thanks for contacting me! I will be in touch soon!</p>;
+    return  (
+    <div className="m-24 md:m-24 lg:m-26 xl:m-20 2xl:m-40 h-[400px] gradientBg rounded-xl rounded-br-[80px] 
+                    rounded-tl-[80px] flex flex-col md:p-9 px-4 py-8 md:py-16" >
+        <div className="flex flex-col justify-center items-center gap-6">
+                <h2 className= "m-16 text-4xl md:text-5xl font-bold text-primary mb-6 text-center">Thanks for contacting me!</h2>
+                <h3 className= "text-2xl md:text-3xl font-bold text-primary mb-6 text-center">I will be in touch soon!</h3>
+        </div>
+    </div>
+        )
   }
 
   return (
