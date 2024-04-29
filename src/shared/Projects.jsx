@@ -4,7 +4,7 @@ const Projects = () => {
             <div className='flex flex-col lg:flex-row justify-between items-start gap-10'>
                 <div className='lg:w-1/4'>
                     <h3 className='text-3xl text-primary font-bold lg:w-1/2 mb-3'>Projects</h3>
-                    <p className='text-base text-tartiary'>These are some projects I have created in the past 6 months. 
+                    <p className='text-base text-tartiary'>These are some projects I have created in the past six months. 
                     This bootcamp has been something that I have fully invested all of my time and energy into making sure I will be successful and have something to show for it! Check it out! </p>
                 </div>
                 {/* cards */}
