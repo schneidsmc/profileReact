@@ -23,7 +23,7 @@ const About = () => {
                     <h2 className='md:tex-5xl text-3xl font-bold text-primary mb-5 leading-normal'>This is a little bit MORE 
                     <hr /><span className='text-tartiary'> About Me</span></h2>
                     <p className='text-tartiary text-lg ma-7'>I graduated from University of Wisconsin-Eau Claire in 2014 with a major in Kinesiology and a minor in Gerontology. This led me to work in the non-profit world at the Door County YMCA for eight years. 
-                    I started as a part-time Active Older Adult employee and worked my way to Healthy Living Director and then finally the Executive Director of the Northern Door YMCA facility.  </p>
+                    I started as a part-time Active Older Adult employee, worked my way to Healthy Living Director and then finally the Executive Director of the Northern Door YMCA facility.  </p>
                 </div>
             </div>
             <div className='flex flex-col md:flex-row justify-between items-center gap-8'>
@@ -35,7 +35,7 @@ const About = () => {
                     <h2 className='md:tex-5xl text-3xl font-bold text-primary mb-5 leading-normal'>This is EVEN MORE 
                     <hr /><span className='text-tartiary'> About Me</span></h2>
                     <p className='text-tartiary text-lg ma-7'>I enjoy the outdoors. In my free time, I enjoy camping, hiking and exploring! Bike-packing is one of my all-time favorite hobbies. 
-                    It could be a ride 20-miles away or across the state, I am happiest when I am on my bike. I have an amazing family and three incredible nephews that always keep me on my toes! </p>
+                    It could be a ride 20-miles away or across the state. I am happiest when I am on my bike. I have an amazing family and three incredible nephews that always keep me on my toes! </p>
                 </div>
             </div>
         </div>
