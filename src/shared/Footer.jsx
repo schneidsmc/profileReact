@@ -5,6 +5,9 @@ const Footer = () => {
                 <div>
                     <ul className='flex'>
                         <li className='footBtns'>
+                            <a href="https://github.com/schneidsmc/profileReact.git" target="_blank" rel="noopener noreferrer">Portfolio Repo</a>
+                        </li>
+                        <li className='footBtns'>
                             <a href="https://www.linkedin.com/in/meganschneider215/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                         </li>
                         <li className='footBtns'>
