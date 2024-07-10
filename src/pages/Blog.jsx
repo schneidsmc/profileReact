@@ -42,7 +42,7 @@ const Blog = () => {
                      {gistUrls.map((gist, index) => (
                          <div key={index} className='flex items-center justify-between bg-white shadow-md rounded-lg p-4 mb-4'>
                              <div className='flex items-center'>
-                                 <img src='/src/assets/ello.svg' alt='ello' className='w-12 h-12 mr-4' />
+                                 <img src='/ello.svg' alt='ello' className='w-12 h-12 mr-4' />
                                  <div>
                                      <h2 className='text-lg font-bold'>{gist.title}</h2>
                                      <p className='text-gray-500 text-sm'>{gist.publishedDate}</p>
