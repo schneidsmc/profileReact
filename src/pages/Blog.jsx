@@ -1,5 +1,4 @@
 
-
 const Blog = () => {
 
     const gistUrls = [
@@ -9,45 +8,53 @@ const Blog = () => {
             publishedDate: '2024-07-10', 
         },
         {
-            url: 'https://gist.github.com/schneidsmc/9cbb58288655dde6fd327412d2ac7ed9',
-            title: 'Im an Apprentice! 2',
-            publishedDate: '2024-07-12', 
+            url: '',
+            title: 'Check Back in for my Next Post!',
+            publishedDate: '', 
         },
     ];
-
-    return (
-        <div className='my-24 md:py-40 px-14 p-4 max-w-screen-lg mx-auto space-y-10'>
-            {/* Banner and Title */}
-            <div className='flex items-center'>
-                {/* Permanent Photo on the Left */}
-                <div className='w-1/4 mr-8'>
-                    <img src='/public/Ireland.jpg' alt='Ireland' className='w-full h-auto rounded-lg shadow-md' />
-                </div>
-                
-                {/* Banner and Title */}
-                <div>
-                    <h1 className='text-4xl font-bold text-primary mb-4'>My Path in Coding</h1>
-                    <div className='bg-primary h-1 w-3/4'></div>
-                </div>
-            </div>
-
-            {/* Gist Buttons */}
-            <div className='mt-8'>
-                {gistUrls.map((gist, index) => (
-                    <div key={index} className='flex items-center justify-between bg-white shadow-md rounded-lg p-4 mb-4'>
-                        <div className='flex items-center'>
-                            <img src='/icon-placeholder.png' alt='Gist Icon' className='w-12 h-12 mr-4' />
-                            <div>
-                                <h2 className='text-lg font-bold'>{gist.title}</h2>
-                                <p className='text-gray-500 text-sm'>{gist.publishedDate}</p>
-                            </div>
-                        </div>
-                        <a href={gist.url} target='_blank' rel='noopener noreferrer' className='text-blue-500 hover:underline'>Read more</a>
-                    </div>
-                ))}
-            </div>
-        </div>
-    );
-};
-
-export default Blog;
+     // Banner image and content data
+     const banner = '/Ireland.jpg'; 
+     const heading = "Megan's Blog"; 
+     const subheading = "Exploring the world of coding and beyond."; 
+ 
+     return (
+        // md:px-12 py-20 p-4 max-w-screen-2xl mx-auto mt-24
+        
+         <div className='gradientBg rounded-xl rounded-br-[80px] md:px-12 p-4 py-20 max-w-screen-2xl mx-auto mt-24 mb-14'>
+             <div className='flex flex-col md:flex-row-reverse justify-between items-center gap-10'>
+                 {/* Banner image */}
+                 <div>
+                     <img src={banner} alt="Banner" className="lg:h-[330px] rounded-xl rounded-br-[80px]" />
+                 </div>
+ 
+                 {/* Banner Content */}
+                 <div className='md:w-3/5'>
+                     {/* Blog Title */}
+                     <div className='px-4 py-2 rounded-lg mb-4'>
+                         <h2 className='text-primary md:text-7xl text-4xl font-bold'>{heading}</h2>
+                     </div>
+ 
+                     {/* Blog Subheading */}
+                     <p className='text-tartiary text-2xl mb-8'>{subheading}</p>
+ 
+                     {/* Gist Buttons */}
+                     {gistUrls.map((gist, index) => (
+                         <div key={index} className='flex items-center justify-between bg-white shadow-md rounded-lg p-4 mb-4'>
+                             <div className='flex items-center'>
+                                 <img src='/src/assets/ello.svg' alt='ello' className='w-12 h-12 mr-4' />
+                                 <div>
+                                     <h2 className='text-lg font-bold'>{gist.title}</h2>
+                                     <p className='text-gray-500 text-sm'>{gist.publishedDate}</p>
+                                 </div>
+                             </div>
+                             <a href={gist.url} target='_blank' rel='noopener noreferrer' className='text-blue-500 hover:underline'>Read more</a>
+                         </div>
+                     ))}
+                 </div>
+             </div>
+         </div>
+     );
+ };
+ 
+ export default Blog;
