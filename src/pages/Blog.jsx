@@ -9,11 +9,11 @@ const Blog = () => {
                 {/* Content */}
                 <div className='md:w-1/2'>
                     <h2 className='md:tex-5xl text-3xl font-bold text-primary mb-5 leading-normal'>
-                        Blog Post Title 1
-                        <span className='text-tartiary'> - Subtitle</span>
+                        Day 1
+                        <span className='text-tartiary'> just testing it out</span>
                     </h2>
                     <p className='text-tartiary text-lg ma-7'>
-                        Summary or introduction to your blog post content.
+                       day 1 content
                     </p>
                 </div>
             </div>
