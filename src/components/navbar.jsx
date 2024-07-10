@@ -13,6 +13,7 @@ const Navbar = () => {
 
     const navItems = [
         { link: 'About', path: '/About' },
+        { link: 'Blog', path: '/Blog' },
         { link: 'Projects', path: '/Projects' },
         { link: 'Contact', path: '/Contact' }
     ];
