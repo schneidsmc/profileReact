@@ -20,3 +20,33 @@ nav{
 .footBtns{
   @apply py-1 px-4 mx-2 font-semibold bg-feldgrau rounded hover:bg-tartiary transition-all duration-300
 }
+.photo-scroll-box {
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.photo-card {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.photo-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.photo-description, .photo-date {
+  margin-top: 5px;
+  color: #555;
+}

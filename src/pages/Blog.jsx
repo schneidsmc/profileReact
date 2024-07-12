@@ -1,4 +1,6 @@
+import { useEffect, useState } from 'react';
 import ello from '../assets/ello.svg';
+
 const Blog = () => {
 
     const gistUrls = [
@@ -17,6 +19,27 @@ const Blog = () => {
      const banner = '/Ireland.jpg'; 
      const heading = "Megan's Blog"; 
      const subheading = "Exploring the world of coding and beyond."; 
+
+     const [photos, setPhotos ] = useState([]);
+
+     useEffect(() => {
+        fetch('/photos.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok')
+                } return response.json()
+            })
+            .then(data => {
+                if (Array.isArray(data)) {
+                    setPhotos(data);
+                } else {
+                    console.error('Fetched Data is not an array:', data);
+                    setPhotos([]);
+                }
+            })
+            .catch(error => console.error('The pics are too cool to find!', error),
+        setPhotos([])
+    )}, []);
  
      return (
         // md:px-12 py-20 p-4 max-w-screen-2xl mx-auto mt-24
@@ -51,6 +74,18 @@ const Blog = () => {
                              <a href={gist.url} target='_blank' rel='noopener noreferrer' className='text-blue-500 hover:underline'>Read more</a>
                          </div>
                      ))}
+                     <div className='photo-scroll-box mt-10'>
+                        {photos.length > 0 ? (
+                        photos.map((photo, index) => (
+                            <div key={index} className='photo-card'>
+                                <img src={photo.url} alt={photo.description} className='photo-img' />
+                                <p className='photo-description'>{photo.description}</p>
+                                <p className='photo-date'>{new Date(photo.date).toLocaleDateString()}</p>
+                            </div>
+                        ))
+                    ) : ( <p> No photos available</p>)}
+
+                     </div>
                  </div>
              </div>
          </div>
