@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import CardCarousel from '../components/cardCarousel';
 import ello from '../assets/ello.svg';
 
+
 const Blog = () => {
 
     const gistUrls = [
@@ -18,13 +19,13 @@ const Blog = () => {
     ];
      // Banner image and content data
      const banner = '/Ireland.jpg'; 
-     const heading = "Megan's Blog"; 
+     const heading = "Just Bloggin'"; 
      const subheading = "Exploring the world of coding and beyond."; 
 
      const [photos, setPhotos ] = useState([]);
 
      useEffect(() => {
-        fetch('/photos.json')
+        fetch('photos.json')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok')
@@ -61,7 +62,7 @@ const Blog = () => {
                      {/* Blog Subheading */}
                      <p className='text-tartiary font-bold text-3xl mb-8'>{subheading}</p>
  
-                     {/* Gist Buttons */}
+                     {/* Blog Buttons */}
                      {gistUrls.map((gist, index) => (
                          <div key={index} className='flex items-center justify-between bg-white shadow-md rounded-lg p-4 mb-4'>
                              <div className='flex items-center'>
@@ -77,31 +78,6 @@ const Blog = () => {
 
                      <CardCarousel photos={photos} />
 
-
-                     {/* PHOTO SCROLL BOX */}
-                {/* <div className='photo-scroll-box mt-10'>
-                {photos.length > 0 ? (
-                    photos.reduce((result, photo, index) => {
-                        const columnIndex = Math.floor(index / 2);
-                        if (!result[columnIndex]) {
-                            result[columnIndex] = [];
-                        }
-                        result[columnIndex].push(photo);
-                        return result;
-                    }, []).map((column, columnIndex) => (
-                        <div key={columnIndex} className='photo-column'>
-                            {column.map((photo, photoIndex) => (
-                                <div key={photoIndex} className='photo-card'>
-                                    <img src={photo.url} alt={photo.description} className='photo-img' />
-                                    <p className='photo-description'>{photo.description}</p>
-                                    <p className='photo-date'>{new Date(photo.date).toLocaleDateString()}</p>
-                                </div>
-                            ))}
-                        </div>
-                    ))
-                    ) : ( <p> No photos available</p>)}
-
-                     </div> */}
                  </div>
              </div>
          </div>
