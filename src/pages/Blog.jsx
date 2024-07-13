@@ -17,7 +17,7 @@ const Blog = () => {
         },
     ];
      // Banner image and content data
-    //  const banner = '/Ireland.jpg'; 
+     const banner = '/Ireland.jpg'; 
      const heading = "Megan's Blog"; 
      const subheading = "Exploring the world of coding and beyond."; 
 
@@ -44,12 +44,12 @@ const Blog = () => {
  
      return (
         
-         <div className='gradientBg rounded-xl rounded-br-[80px] md:px-12 p-4 py-20 max-w-screen-2xl mx-auto mt-24 mb-14 justify-center items-center'>
-             <div className='flex md:flex-row-reverse justify-between items-center gap-10'>
+         <div className='gradientBg2 rounded-xl rounded-br-[80px] md:px-12 p-4 py-20 max-w-screen-2xl mx-auto mt-24 mb-14 flex justify-center items-center'>
+             <div className='flex md:flex-row-reverse justify-between items-center gap-10 w-full max-w-7xl'>
                  {/*  image */}
-                 {/* <div>
-                     <img src={banner} alt="Banner" className="lg:h-[330px] rounded-xl rounded-br-[80px]" />
-                 </div> */}
+                 <div>
+                     <img src={banner} alt="Banner" className="lg:h-[630px] rounded-xl rounded-br-[80px]" />
+                 </div>
  
                  {/*  Content */}
                  <div className='md:w-3/5'>
@@ -59,7 +59,7 @@ const Blog = () => {
                      </div>
  
                      {/* Blog Subheading */}
-                     <p className='text-tartiary text-2xl mb-8'>{subheading}</p>
+                     <p className='text-tartiary font-bold text-3xl mb-8'>{subheading}</p>
  
                      {/* Gist Buttons */}
                      {gistUrls.map((gist, index) => (

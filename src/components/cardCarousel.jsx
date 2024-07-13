@@ -24,14 +24,14 @@ const CardCarousel = ({ photos }) => {
   };
 
   return (
-    <div className="mt-2 overflow-hidden relative rounded-lg p-4">
+    <div className="mt-10 mb-8 overflow-hidden relative rounded-lg p-5">
       <div className="w-full h-96 mx-auto relative overflow-hidden">
         <div className="mt-4 p-10 flex justify-between items-center overflow-x-auto">
           {photos.map((photo, index) => {
             const isCurrent = index === currentIndex;
             const marginLeft = index === 0 ? `${currentIndex * -33.33}%` : 'auto';
             const cardClasses = `
-              flex-none w-1/3 p-4 bg-white rounded-lg shadow-md
+              flex-none m-4 w-1/3 p-4 bg-white rounded-lg shadow-md
               transition-transform duration-500 cursor-pointer
               ${isCurrent ? 'scale-110 ml-0 z-10' : 'scale-90 ml-0'}
             `;
