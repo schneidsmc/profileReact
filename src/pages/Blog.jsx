@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import CardCarousel from '../components/cardCarousel';
 import ello from '../assets/ello.svg';
 
 const Blog = () => {
@@ -16,7 +17,7 @@ const Blog = () => {
         },
     ];
      // Banner image and content data
-     const banner = '/Ireland.jpg'; 
+    //  const banner = '/Ireland.jpg'; 
      const heading = "Megan's Blog"; 
      const subheading = "Exploring the world of coding and beyond."; 
 
@@ -42,16 +43,15 @@ const Blog = () => {
     )}, []);
  
      return (
-        // md:px-12 py-20 p-4 max-w-screen-2xl mx-auto mt-24
         
-         <div className='gradientBg rounded-xl rounded-br-[80px] md:px-12 p-4 py-20 max-w-screen-2xl mx-auto mt-24 mb-14'>
-             <div className='flex flex-col md:flex-row-reverse justify-between items-center gap-10'>
-                 {/* Banner image */}
-                 <div>
+         <div className='gradientBg rounded-xl rounded-br-[80px] md:px-12 p-4 py-20 max-w-screen-2xl mx-auto mt-24 mb-14 justify-center items-center'>
+             <div className='flex md:flex-row-reverse justify-between items-center gap-10'>
+                 {/*  image */}
+                 {/* <div>
                      <img src={banner} alt="Banner" className="lg:h-[330px] rounded-xl rounded-br-[80px]" />
-                 </div>
+                 </div> */}
  
-                 {/* Banner Content */}
+                 {/*  Content */}
                  <div className='md:w-3/5'>
                      {/* Blog Title */}
                      <div className='px-4 py-2 rounded-lg mb-4'>
@@ -74,18 +74,34 @@ const Blog = () => {
                              <a href={gist.url} target='_blank' rel='noopener noreferrer' className='text-blue-500 hover:underline'>Read more</a>
                          </div>
                      ))}
-                     <div className='photo-scroll-box mt-10'>
-                        {photos.length > 0 ? (
-                        photos.map((photo, index) => (
-                            <div key={index} className='photo-card'>
-                                <img src={photo.url} alt={photo.description} className='photo-img' />
-                                <p className='photo-description'>{photo.description}</p>
-                                <p className='photo-date'>{new Date(photo.date).toLocaleDateString()}</p>
-                            </div>
-                        ))
+
+                     <CardCarousel photos={photos} />
+
+
+                     {/* PHOTO SCROLL BOX */}
+                {/* <div className='photo-scroll-box mt-10'>
+                {photos.length > 0 ? (
+                    photos.reduce((result, photo, index) => {
+                        const columnIndex = Math.floor(index / 2);
+                        if (!result[columnIndex]) {
+                            result[columnIndex] = [];
+                        }
+                        result[columnIndex].push(photo);
+                        return result;
+                    }, []).map((column, columnIndex) => (
+                        <div key={columnIndex} className='photo-column'>
+                            {column.map((photo, photoIndex) => (
+                                <div key={photoIndex} className='photo-card'>
+                                    <img src={photo.url} alt={photo.description} className='photo-img' />
+                                    <p className='photo-description'>{photo.description}</p>
+                                    <p className='photo-date'>{new Date(photo.date).toLocaleDateString()}</p>
+                                </div>
+                            ))}
+                        </div>
+                    ))
                     ) : ( <p> No photos available</p>)}
 
-                     </div>
+                     </div> */}
                  </div>
              </div>
          </div>
