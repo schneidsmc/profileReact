@@ -7,14 +7,14 @@ const Blog = () => {
 
     const gistUrls = [
         {
+            url: 'https://gist.github.com/schneidsmc/8069457da738626f45cebbebc2268e68',
+            title: 'Letter to Future Me',
+            publishedDate: '2024-07-14', 
+        },
+        {
             url: 'https://gist.github.com/schneidsmc/9cbb58288655dde6fd327412d2ac7ed9',
             title: 'Im an Apprentice!',
             publishedDate: '2024-07-10', 
-        },
-        {
-            url: '',
-            title: 'Check Back in for my Next Post!',
-            publishedDate: '', 
         },
     ];
      // Banner image and content data
