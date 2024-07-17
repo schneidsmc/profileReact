@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import CardCarousel from '../components/cardCarousel';
+// import { useEffect, useState } from 'react';
+// import CardCarousel from '../components/cardCarousel';
 import ello from '../assets/ello.svg';
 
 
@@ -22,26 +22,26 @@ const Blog = () => {
      const heading = "Just Bloggin'"; 
      const subheading = "Exploring the world of coding and beyond."; 
 
-     const [photos, setPhotos ] = useState([]);
+    //  const [photos, setPhotos ] = useState([]);
 
-     useEffect(() => {
-        fetch('photos.json')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok')
-                } return response.json()
-            })
-            .then(data => {
-                if (Array.isArray(data)) {
-                    setPhotos(data);
-                } else {
-                    console.error('Fetched Data is not an array:', data);
-                    setPhotos([]);
-                }
-            })
-            .catch(error => console.error('The pics are too cool to find!', error),
-        setPhotos([])
-    )}, []);
+    //  useEffect(() => {
+    //     fetch('photos.json')
+    //         .then(response => {
+    //             if (!response.ok) {
+    //                 throw new Error('Network response was not ok')
+    //             } return response.json()
+    //         })
+    //         .then(data => {
+    //             if (Array.isArray(data)) {
+    //                 setPhotos(data);
+    //             } else {
+    //                 console.error('Fetched Data is not an array:', data);
+    //                 setPhotos([]);
+    //             }
+    //         })
+    //         .catch(error => console.error('The pics are too cool to find!', error),
+    //     setPhotos([])
+    // )}, []);
  
      return (
         
@@ -76,7 +76,7 @@ const Blog = () => {
                          </div>
                      ))}
 
-                     <CardCarousel photos={photos} />
+                     {/* <CardCarousel photos={photos} /> */}
 
                  </div>
              </div>
