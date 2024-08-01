@@ -7,6 +7,11 @@ const Blog = () => {
 
     const gistUrls = [
         {
+            url: 'https://gist.github.com/schneidsmc/9f7087c8c6f074273f6ac2c0a4ea7b62',
+            title: 'My Workstation',
+            publishedDate: '2024-07-28', 
+        },
+        {
             url: 'https://gist.github.com/schneidsmc/8069457da738626f45cebbebc2268e68',
             title: 'Letter to Future Me',
             publishedDate: '2024-07-14', 
@@ -15,11 +20,6 @@ const Blog = () => {
             url: 'https://gist.github.com/schneidsmc/9cbb58288655dde6fd327412d2ac7ed9',
             title: 'Im an Apprentice!',
             publishedDate: '2024-07-10', 
-        },
-        {
-            url: 'https://gist.github.com/schneidsmc/9f7087c8c6f074273f6ac2c0a4ea7b62',
-            title: 'My Workstation',
-            publishedDate: '2024-07-28', 
         },
     ];
      // Banner image and content data
