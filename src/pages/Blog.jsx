@@ -16,6 +16,11 @@ const Blog = () => {
             title: 'Im an Apprentice!',
             publishedDate: '2024-07-10', 
         },
+        {
+            url: 'https://gist.github.com/schneidsmc/9f7087c8c6f074273f6ac2c0a4ea7b62',
+            title: 'My Workstation',
+            publishedDate: '2024-07-28', 
+        },
     ];
      // Banner image and content data
      const banner = '/Ireland.jpg'; 

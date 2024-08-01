@@ -84,7 +84,6 @@ const CardCarousel = ({ photos }) => {
           <button className="w-6 h-6 rounded-full bg-tartiary" onClick={handlePrev}>&lt;</button>
           <button className="w-6 h-6 rounded-full bg-tartiary" onClick={handleNext}>&gt;</button>
         </div>
-       
       </div>
       <Indicators totalIndicators={photos.length} currentIndex={currentIndex} />
     </div>
