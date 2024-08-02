@@ -9,7 +9,7 @@ const Blog = () => {
         {
             url: 'https://gist.github.com/schneidsmc/8a7daa1b6d690d15a3875f11219113ca',
             title: 'First Day Rituals',
-            publishedDate: '2024-07-28', 
+            publishedDate: '2024-07-30', 
         },
         {
             url: 'https://gist.github.com/schneidsmc/9f7087c8c6f074273f6ac2c0a4ea7b62',
