@@ -7,9 +7,9 @@ const Blog = () => {
 
     const gistUrls = [
         {
-            url: 'https://gist.github.com/schneidsmc/8a7daa1b6d690d15a3875f11219113ca',
-            title: 'First Day Rituals ROUND ',
-            publishedDate: '2024-07-30', 
+            url: 'https://gist.github.com/schneidsmc/c363a9dad97757dd3fa7893cf92624f8',
+            title: 'Non-Technical Skills',
+            publishedDate: '2024-08-09', 
         },
         {
             url: 'https://gist.github.com/schneidsmc/8a7daa1b6d690d15a3875f11219113ca',
