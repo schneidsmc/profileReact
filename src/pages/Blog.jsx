@@ -7,6 +7,11 @@ const Blog = () => {
 
     const gistUrls = [
         {
+            url: 'https://gist.github.com/schneidsmc/caf6a35d7babe73fa4b0f001ae899d7e',
+            title: 'Coding Milestones',
+            publishedDate: '2024-08-17', 
+        },
+        {
             url: 'https://gist.github.com/schneidsmc/c363a9dad97757dd3fa7893cf92624f8',
             title: 'Non-Technical Skills',
             publishedDate: '2024-08-09', 
