@@ -7,6 +7,16 @@ const Blog = () => {
 
     const gistUrls = [
         {
+            url: 'https://gist.github.com/schneidsmc/1c9562ac5fffc6ac824e09eca87954b7',
+            title: 'Crucial Conversations',
+            publishedDate: '2024-09-06', 
+        },
+        {
+            url: 'https://gist.github.com/schneidsmc/4d97a1a66f6cf5e9035f36ca638d8cad',
+            title: 'Alright Stop, Collaborate and Listen',
+            publishedDate: '2024-08-30', 
+        },
+        {
             url: 'https://gist.github.com/schneidsmc/caf6a35d7babe73fa4b0f001ae899d7e',
             title: 'Coding Milestones',
             publishedDate: '2024-08-17', 
