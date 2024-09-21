@@ -7,6 +7,11 @@ const Blog = () => {
 
     const gistUrls = [
         {
+            url: 'https://gist.github.com/schneidsmc/c725dd6a7b323ca15591cdc5a4851216',
+            title: 'Buffering...',
+            publishedDate: '2024-09-20', 
+        },
+        {
             url: 'https://gist.github.com/schneidsmc/1c9562ac5fffc6ac824e09eca87954b7',
             title: 'Crucial Conversations',
             publishedDate: '2024-09-06', 
