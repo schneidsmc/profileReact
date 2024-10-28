@@ -7,6 +7,11 @@ const Blog = () => {
 
     const gistUrls = [
         {
+            url: 'https://gist.github.com/schneidsmc/bb05699d47bfa6f74702851be460947a',
+            title: 'Programming Languages are WILD',
+            publishedDate: '2024-10-27', 
+        },
+        {
             url: 'https://gist.github.com/schneidsmc/256c8408dc44476403be98b345435cad',
             title: 'Halfway There, Still Learning',
             publishedDate: '2024-09-23', 
