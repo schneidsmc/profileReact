@@ -9,9 +9,12 @@ const About = () => {
                 <div className='md:w-1/2'>
                     <h2 className='md:tex-5xl text-3xl font-bold text-primary mb-5 leading-normal'> This is
                     <span className='text-tartiary'> About Me</span></h2>
-                    <p className='text-tartiary text-lg ma-7'>Welcome to my portfolio! I am a recent Bootcamp graduate from the UW Extension Program. I have a unique blend of passion and determination that has proven to be helpful throughout my career.
-                    I have an extremely purpose-driven mindset that allows me to think outside of the box for any challenges that arise. I am a life-long learner and I genuinely enjoy gaining knowledge from anyone or any situation. 
-                    I have learned Javascript, APIs, Node.js, OOP, Express.js, SQL, ORM, MVC, PWAs, React and the MERN Stack.</p>
+                    <p className='text-tartiary text-lg ma-7 mb-7'>Welcome to my portfolio! Im currently a software development apprentice with the Develop Carolina program and a Staff Technologist Intern at Booz Allen Hamilton.</p>
+
+                    <p className='text-tartiary text-lg ma-7 mb-7'>At Booz Allen, I am gaining hands-on experience in Python, Agile methodologies, AWS, and AI, which is improving my technical foundation and is honing my ability to collaborate effectively within a team.</p>
+                    <p className='text-tartiary text-lg ma-7 mb-7'>Before these positions, I completed an intensive Bootcamp with the UW Extension Program, where I developed a strong foundation in JavaScript, APIs, Node.js, OOP, Express.js, SQL, ORM, MVC, PWAs, React, and the MERN Stack.</p> 
+
+                    <p className='text-tartiary text-lg ma-7 mb-7'>My journey has been fueled by a purpose-driven mindset and a passion for solving complex challenges through creative solutions. I am a lifelong learner, always eager to grow and gain insights from every experience.</p>
                 </div>
             </div>
             <div className='flex flex-col md:flex-row-reverse justify-between items-center gap-8'>
