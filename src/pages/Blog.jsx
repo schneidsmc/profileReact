@@ -7,6 +7,11 @@ const Blog = () => {
 
     const gistUrls = [
         {
+            url: 'https://gist.github.com/schneidsmc/8b4e8e1a2ffa885a262add440ed97b64',
+            title: 'Feedback as Fuel',
+            publishedDate: '2024-11-06', 
+        },
+        {
             url: 'https://gist.github.com/schneidsmc/bb05699d47bfa6f74702851be460947a',
             title: 'Programming Languages are WILD',
             publishedDate: '2024-10-27', 
@@ -87,46 +92,46 @@ const Blog = () => {
     //         .catch(error => console.error('The pics are too cool to find!', error),
     //     setPhotos([])
     // )}, []);
- 
-     return (
+
+    return (
         
-         <div className='gradientBg2 rounded-xl rounded-br-[80px] md:px-12 p-4 py-20 max-w-screen-2xl mx-auto mt-24 mb-14 flex justify-center items-center'>
-             <div className='flex md:flex-row-reverse justify-between items-center gap-10 w-full max-w-7xl'>
+        <div className='gradientBg2 rounded-xl rounded-br-[80px] md:px-12 p-4 py-20 max-w-screen-2xl mx-auto mt-24 mb-14 flex justify-center items-center'>
+            <div className='flex md:flex-row-reverse justify-between items-center gap-10 w-full max-w-7xl'>
                  {/*  image */}
-                 <div>
-                     <img src={banner} alt="Banner" className="lg:h-[630px] rounded-xl rounded-br-[80px]" />
-                 </div>
- 
+                <div>
+                    <img src={banner} alt="Banner" className="lg:h-[630px] rounded-xl rounded-br-[80px]" />
+                </div>
+
                  {/*  Content */}
-                 <div className='md:w-3/5'>
+                <div className='md:w-3/5'>
                      {/* Blog Title */}
-                     <div className='px-4 py-2 rounded-lg mb-4'>
-                         <h2 className='text-primary md:text-7xl text-4xl font-bold'>{heading}</h2>
-                     </div>
- 
+                    <div className='px-4 py-2 rounded-lg mb-4'>
+                        <h2 className='text-primary md:text-7xl text-4xl font-bold'>{heading}</h2>
+                    </div>
+
                      {/* Blog Subheading */}
-                     <p className='text-tartiary font-bold text-3xl mb-8'>{subheading}</p>
- 
+                    <p className='text-tartiary font-bold text-3xl mb-8'>{subheading}</p>
+
                      {/* Blog Buttons */}
-                     {gistUrls.map((gist, index) => (
-                         <div key={index} className='flex items-center justify-between bg-white shadow-md rounded-lg p-4 mb-4'>
-                             <div className='flex items-center'>
-                                 <img src= {ello} alt='ello' className='w-12 h-12 mr-4' />
-                                 <div>
-                                     <h2 className='text-lg font-bold'>{gist.title}</h2>
-                                     <p className='text-gray-500 text-sm'>{gist.publishedDate}</p>
-                                 </div>
-                             </div>
-                             <a href={gist.url} target='_blank' rel='noopener noreferrer' className='text-blue-500 hover:underline'>Read more</a>
-                         </div>
-                     ))}
+                    {gistUrls.map((gist, index) => (
+                        <div key={index} className='flex items-center justify-between bg-white shadow-md rounded-lg p-4 mb-4'>
+                            <div className='flex items-center'>
+                                <img src= {ello} alt='ello' className='w-12 h-12 mr-4' />
+                                <div>
+                                    <h2 className='text-lg font-bold'>{gist.title}</h2>
+                                    <p className='text-gray-500 text-sm'>{gist.publishedDate}</p>
+                                </div>
+                            </div>
+                            <a href={gist.url} target='_blank' rel='noopener noreferrer' className='text-blue-500 hover:underline'>Read more</a>
+                        </div>
+                    ))}
 
                      {/* <CardCarousel photos={photos} /> */}
 
-                 </div>
-             </div>
-         </div>
-     );
- };
- 
- export default Blog;
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Blog;
