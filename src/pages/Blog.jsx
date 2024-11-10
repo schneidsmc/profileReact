@@ -7,6 +7,11 @@ const Blog = () => {
 
     const gistUrls = [
         {
+            url: 'https://gist.github.com/schneidsmc/0e174c15a2fb7c75645d846030188e8d',
+            title: 'The Code is Alright, But the Tests are Better',
+            publishedDate: '2024-11-09', 
+        },
+        {
             url: 'https://gist.github.com/schneidsmc/8b4e8e1a2ffa885a262add440ed97b64',
             title: 'Feedback as Fuel',
             publishedDate: '2024-11-06', 
