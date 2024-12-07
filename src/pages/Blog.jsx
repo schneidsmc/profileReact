@@ -7,6 +7,16 @@ const Blog = () => {
 
     const gistUrls = [
         {
+            url: 'https://gist.github.com/schneidsmc/b5d13d90ff96e10a157abc497c3adbbe',
+            title: 'Level UP, UP, and AWAY',
+            publishedDate: '2024-12-07', 
+        },
+        {
+            url: 'https://gist.github.com/schneidsmc/b523afa3afb4354ce1757203f357c56e',
+            title: 'SECURITY',
+            publishedDate: '2024-12-07', 
+        },
+        {
             url: 'https://gist.github.com/schneidsmc/0e174c15a2fb7c75645d846030188e8d',
             title: 'The Code is Alright, But the Tests are Better',
             publishedDate: '2024-11-09', 
