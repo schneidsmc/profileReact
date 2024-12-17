@@ -7,6 +7,11 @@ const Blog = () => {
 
     const gistUrls = [
         {
+            url: 'https://gist.github.com/schneidsmc/dbbbaf0d6bcacd11741050aeccd89837',
+            title: 'The Final Countdown',
+            publishedDate: '2024-12-17', 
+        },
+        {
             url: 'https://gist.github.com/schneidsmc/b5d13d90ff96e10a157abc497c3adbbe',
             title: 'Level UP, UP, and AWAY',
             publishedDate: '2024-12-07', 
